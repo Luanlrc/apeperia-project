@@ -25,6 +25,14 @@
     text-align: center;
 }
 
+.cabecalho-navegacao ul{
+    display: flex;
+}
+
+.cabecalho-navegacao ul li{
+    margin: 0 1.5vw;
+}
+
 .cabecalho-link {
     font-size: 1.1rem;
 
