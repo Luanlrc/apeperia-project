@@ -2,36 +2,57 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
         <title>Home | Apeperia</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/cabecalho.css">
-        <link rel="stylesheet" href="css/chamada.css">
-</head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link href="css/cabecalho.css" rel="stylesheet">
+        <link href="css/chamada.css" rel="stylesheet">
+        <link href="css/destaques.css" rel="stylesheet">
+    </head>
     <body>
-        <header class="cabecalho">
-            <img src="img/logo-apeperia.svg" alt="Logo da Apeperia" class="cabecalho-logo">
-            <nav class="cabecalho-navegacao">
+        <header class="cabecalho container">
+            <img src="img/logo-apeperia.svg" alt="Logo da Apeperia" class="cabecalho__logo">
+            <nav class="cabecalho__navegacao">
                 <ul>
-                    <li><a href="cabecalho-link">Sobre</a></li>
-                    <li><a href="cabecalho-link">Planos</a></li>
-                    <li><a href="cabecalho-link">Blog</a></li>
-                    <li><a href="cabecalho-link">Destaques</a></li>
-                    <li><a href="cabecalho-link">Institucional</a></li>
-                    <li><a href="cabecalho-link">Contato</a></li>
+                    <li class="cabecalho__link"><a href="#">Sobre</a></li>
+                    <li class="cabecalho__link"><a href="#">Planos</a></li>
+                    <li class="cabecalho__link"><a href="#">Blog</a></li>
+                    <li class="cabecalho__link"><a href="#">Destaques</a></li>
+                    <li class="cabecalho__link"><a href="#">Institucional</a></li>
+                    <li class="cabecalho__link"><a href="#">Contato</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="chamada">
-                <h1 class="chamada-titulo">Aplicativos na Medida</h1>
-                <p class="chamada-texto">Apeperia tem um jeito inovador de comparar e montar aplicativos para pequenas e médias empresas.</p>
-                <a href="#" class="chamada-botao">Conheça os planos</a>
+            <section class="chamada container">
+                <h1 class="chamada__titulo">Aplicativos Na Medida</h1>
+                <p class="chamada__texto">Apeperia tem um jeito inovador de comparar e montar aplicativos para pequenas e médias empresas.</p>
+                <a href="#" class="chamada__botao botao">Conheça os planos</a>
+            </section>
+            <section class="destaques container">
+                <h2 class="destaques-titulo">Destaques</h2>
+                <a href="#">
+                    <figure class="destaque-painel">
+                        <div class="container-img">
+                        <img src="img/comecando-criar-logotipo.png" alt="Painel do post sobre criação de logotipo" class="destaques-painel-imagem">
+                        </div>
+                        <figcaption class="destaquer-painel-texto">Conheça as primeiras etapas para a criação de um logotipo</figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="destaque-painel">
+                        <div class="container-img">
+                            <img src="img/dicas-fotografia.png" alt="Painel do post sobre fotografia com celular" class="destaques-painel-imagem">
+                        </div>
+                        <figcaption class="destaquer-painel-texto">Veja dicas de como fotografar usando seu celular</figcaption>
+                    </figure>
+                </a>
+                <div class="container-destaques-botao">
+                <a href="" class="destaques-botao botao">Receber destaques por email</a>
+                </div>
             </section>
         </main>
-
     </body>
 </html>
